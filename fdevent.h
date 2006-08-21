@@ -1,4 +1,4 @@
-/* fdevent.h
+/* http://frotznet.googlecode.com/svn/trunk/utils/fdevent.h
 **
 ** Copyright 2006, Brian Swetland <swetland@frotz.net>
 **
