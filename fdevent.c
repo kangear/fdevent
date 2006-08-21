@@ -30,7 +30,6 @@
 
 #define TRACE(x...) fprintf(stderr,x)
 
-#define USE_EPOLL 1
 #define DEBUG 0
 
 static void fatal(const char *fn, const char *fmt, ...)
@@ -77,7 +76,7 @@ static fdevent list_pending = {
 static fdevent **fd_table = 0;
 static int fd_table_max = -1;
 
-#if USE_EPOLL
+#if HAVE_EPOLL
 
 #include <sys/epoll.h>
 
